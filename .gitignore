@@ -1,0 +1,90 @@
+# ---- Documents / spreadsheets / presentations ----
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+*.csv
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.pdf
+*.odt
+*.ods
+*.odp
+*.rtf
+
+# ---- Archives / installers / disk images ----
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tgz
+*.bz2
+*.iso
+*.exe
+*.msi
+*.dmg
+
+# ---- Database dumps / backups ----
+*.sql.gz
+*.sql.zip
+*.dump
+*.bak
+*.backup
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+
+# ---- Large media ----
+*.mp3
+*.wav
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.psd
+*.ai
+*.tif
+*.tiff
+*.raw
+
+# ---- Uploads / generated files ----
+uploads/
+upload/
+backup/
+backups/
+tmp/
+temp/
+cache/
+
+# ---- Dependencies ----
+node_modules/
+vendor/
+bower_components/
+
+# ---- Logs ----
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Environment / secrets ----
+.env
+.env.*
+!.env.example
+config.local.php
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.idea/
+.vscode/
+*.swp

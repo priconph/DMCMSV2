@@ -922,7 +922,22 @@ function select_list_of_users(){
 				html += '<tr>';
 				html += '	<td>'+data['username'][i]+'</td>';
 				html += '	<td>'+data['name'][i]+'</td>';
-				html += '	<td>'+data['u_access_type'][i]+'</td>';
+				// html += '	<td>'+data['u_access_type'][i]+'</td>';
+
+				if (data['u_access_type'][i] == '1'){
+					html += '<td>Operator Module</td>';
+				}else if (data['u_access_type'][i] == '2'){
+					html += '<td>Maintenance In-charge Module</td>';
+				}else if (data['u_access_type'][i] == '3'){
+					html += '<td>Approver Module</td>';
+				}else if (data['u_access_type'][i] == '4'){
+					html += '<td>Section Head Module</td>';
+				}else if (data['u_access_type'][i] == '6'){
+					html += '<td>Administrator</td>';
+				}else{
+					html += '<td><i>For Assign</i></td>';
+				}
+
 				switch(data['u_access_type'][i]){
 					case null:
 						html += '	<td><a href="#" class="a_assign_user"><i class="fa fa-edit"></i></a></td>';

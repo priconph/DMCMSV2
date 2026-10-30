@@ -776,7 +776,7 @@ WHERE ca_parent_id = '".$parent_pkid."' group by ca_parent_id ) t3
 		$table 	   		= 'db_rapid.vw_module_per_user';
 		$joins 	   		= 'LEFT JOIN t_users ON db_rapid.vw_module_per_user.username=t_users.u_username';
 		$sql_where 		= 'WHERE module_id="168"';
-		$sql_order 		= '';
+		$sql_order 		= 'ORDER BY username ASC';
 		$sql_limit 		= '';
 		$result 		= DB_DMCMS::getInstance()->select_query($array_fields,$table,$joins,$sql_where,$sql_order,$sql_limit);
 		$ctr 			= 0;
